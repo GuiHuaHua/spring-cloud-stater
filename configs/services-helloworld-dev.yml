@@ -1,0 +1,16 @@
+eureka:
+    client:
+        serviceUrl:
+            #server对应的地址
+            defaultZone: http://localhost:8000/eureka/
+    instance:
+        hostname: localhost
+server:
+    port: 8089
+spring:
+    application:
+        #应用名
+        name: service-helloworld
+ribbon:
+  eureka:
+    enabled: true
